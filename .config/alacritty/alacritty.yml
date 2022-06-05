@@ -1,0 +1,85 @@
+import:
+  - ~/.config/alacritty/dracula.yml
+
+bell:
+  animation: EaseOutExpo
+  duration: 450
+  color: '#ffffff'
+
+cursor:
+  style:
+    shape: Block
+    blinking: Always
+  vi_mode_style: Block
+  blink_interval: 450
+  unfocused_hollow: true
+  live_config_reload: true
+
+# If `true`, bold text is drawn using the bright color variants.
+draw_bold_text_with_bright_colors: true
+
+env:
+  TERM: xterm-256color
+
+font:
+  normal:
+    family: MesloLGS NF
+    style: Regular
+  bold:
+    family: MesloLGS NF
+    style: Bold
+  italic:
+    family: MesloLGS NF
+    style: Italic
+  bold_italic:
+    family: MesloLGS NF
+    style: Bold Italic
+  size: 13.0
+  use_thin_strokes: true
+
+key_bindings:
+  - { key: Key0, mods: Alt, chars: 'º' }
+  - { key: Key1, mods: Alt, chars: '¡' }
+  - { key: Key2, mods: Alt, chars: '€' }
+  - { key: Key3, mods: Alt, chars: '#' }
+  - { key: Key4, mods: Alt, chars: '¢' }
+  - { key: Key5, mods: Alt, chars: '∞' }
+  - { key: Key6, mods: Alt, chars: '§' }
+  - { key: Key7, mods: Alt, chars: '¶' }
+  - { key: Key8, mods: Alt, chars: '•' }
+  - { key: Key9, mods: Alt, chars: 'ª' }
+
+mouse:
+  hints:
+    launcher:
+      # This depends on your OS, on Mac it’s `open`
+      program: open
+    modifiers: Command
+
+  hide_when_typing: false
+
+scrolling:
+  # Specifying '0' will disable scrolling.
+  history: 100000
+  # Number of lines the viewport will move for every line scrolled when
+  # scrollback is enabled (history > 0).
+  multiplier: 3
+
+selection:
+  # This string contains all characters that are used as separators for
+  # "semantic words" in Alacritty.
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  # When set to `true`, selected text will be copied to the primary clipboard.
+  save_to_clipboard: true
+
+shell:
+  program: /bin/zsh
+  args:
+    - --login
+
+window:
+  dynamic_title: true
+  decorations: Buttonless
+  dimensions:
+    columns: 121
+    lines: 48

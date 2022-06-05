@@ -1,0 +1,12 @@
+{
+  "python.formatting.provider": "black",
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true,
+  "diagnostic.checkCurrentLine": true,
+  "python.analysis.useLibraryCodeForTypes": false,
+  "python.analysis.typeCheckingMode": "basic",
+  "tsserver.enable": true,
+  "tsserver.enableJavascript": true,
+  "coc.preferences.formatOnSaveFiletypes": ["*"],
+  "coc.preferences.watchmanPath": "/usr/local/bin/watchman"
+}

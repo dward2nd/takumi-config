@@ -1,0 +1,6 @@
+pynvim
+neovim
+black
+isort
+flake8
+virtualenv
