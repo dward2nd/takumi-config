@@ -1,12 +1,28 @@
 {
-  "python.formatting.provider": "black",
-  "python.linting.pylintEnabled": true,
-  "python.linting.enabled": true,
+  "coc.preferences.extensionUpdateCheck": "daily",
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "js",
+    "jsx",
+    "markdown",
+    "ts",
+    "tsx"
+  ],
+  "coc.preferences.watchmanPath": "/usr/local/bin/watchman",
+  "clangd.semanticHighlighting": true,
+  "coc.preferences.semanticTokensHighlights": false,
   "diagnostic.checkCurrentLine": true,
-  "python.analysis.useLibraryCodeForTypes": false,
-  "python.analysis.typeCheckingMode": "basic",
+  "python.formatting.provider": "black",
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true,
+  "python.sortImports.path": "isort",
+  "python.sortImports.args": [
+    "--line-length",
+    "79",
+    "--profile=black"
+  ],
+  "python.venvPath": "~/.virtualenvs/",
   "tsserver.enable": true,
-  "tsserver.enableJavascript": true,
-  "coc.preferences.formatOnSaveFiletypes": ["*"],
-  "coc.preferences.watchmanPath": "/usr/local/bin/watchman"
+  "tsserver.enableJavascript": true
 }
+
